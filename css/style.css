@@ -10,13 +10,13 @@
   margin-top: -200px;
   margin-left: -200px;
   border-radius: 2px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
-	background: #08246A;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: #08246A;
   color: #333;
-	font-family: 'Open Sans', Helvetica, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 :root {
 	--menu-icon-line-height: 8px;
@@ -31,45 +31,48 @@
 }
 
 .menu-icon {
-	width: 150px;
+	width: 100px;
 	height: 52px;
 	cursor: pointer;
 }
 
-.line-1, .line-2, .line-3 {
+.line-1,
+.line-2,
+.line-3 {
 	height: var(--menu-icon-line-height);
 	width: 100%;
 	background: #fff;
 }
+
 .line-1 {
-	animation: 1s animate-line-1-rev .7s ease-in-out;
+	animation: animate-line-1-rev .7s ease-in-out;
 }
 
 .line-2 {
 	margin: var(--menu-icon-line-space) 0;
-	animation: 1s animate-line-2-rev .7s ease-in-out;
+	animation: animate-line-2-rev .7s ease-in-out;
 }
 
 .line-3 {
-	animation: 1s animate-line-3-rev .7s ease-in-out;
+	animation: animate-line-3-rev .7s ease-in-out;
 }
 
 .line-1.active {
-	animation: 1s animate-line-1 .7s ease-in-out;
+	animation: animate-line-1 .7s ease-in-out;
 	animation-fill-mode: forwards;
 }
 
 .line-2.active {
-	animation: .5s animate-line-2 .7s ease-in-out; 
+	animation: animate-line-2 .7s ease-in-out; 
 	animation-fill-mode: forwards; 
 }
 
 .line-3.active {
-	animation: 1s animate-line-3 .7s ease-in-out; 
+	animation: animate-line-3 .7s ease-in-out; 
 	animation-fill-mode: forwards; 
 }
 
-.no-animate {
+.no-animation {
 	animation: none !important;
 }
 
