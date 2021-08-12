@@ -1,7 +1,7 @@
 self.addEventListener('message', async event => {
 	const baseURL = event.data;
 
-	const numArr = Array.from({length: 100}, (_, i) => i + 200);
+	const numArr = Array.from({length: 300}, (_, i) => i + 200);
 	
 	const resArr = await Promise.all(
 		numArr.map(async (imgNum) => {

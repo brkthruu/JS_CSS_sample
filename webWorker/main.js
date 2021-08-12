@@ -13,5 +13,5 @@ if (window.Worker) {
 		myWorker.terminate();
 	}
 
-	myWorker.postMessage(`https://placedog.net/`);
+	myWorker.postMessage(`https://picsum.photos/`);
 }
